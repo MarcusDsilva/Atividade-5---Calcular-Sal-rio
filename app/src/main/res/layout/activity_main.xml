@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reajuste salarial!"
+        android:textSize="40dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/txtsalario"
+        android:layout_below="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu salrio!"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edtMoney"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtsalario"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Quanto voce ganha?"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/txtganhar"
+        android:layout_below="@+id/edtMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quanto a mais voce quer ganhar?!"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+             <RadioGroup
+                 android:id="@+id/rgtodos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtganhar"          >
+        <RadioButton
+            android:id="@+id/rb40"
+            android:layout_below="@+id/txtganhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40%"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            />
+
+    <RadioButton
+        android:id="@+id/rb45"
+        android:layout_below="@+id/rb40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45%"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+    <RadioButton
+        android:id="@+id/rb50"
+        android:layout_below="@+id/rb45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+             </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/rgtodos"
+        android:layout_marginLeft="30dp"
+        android:text="Calcular novo salário"
+        android:textSize="20dp" />
+
+</RelativeLayout>
